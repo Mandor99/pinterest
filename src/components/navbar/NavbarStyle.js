@@ -96,6 +96,7 @@ export const SearchWrapper = styled.div`
 		position: absolute;
 		top: 65px;
 		width: 95%;
+		justify-content: space-between;
 		margin: auto;
 		/* margin-left: 2vw; */
 		/* margin-right: 2vw; */
