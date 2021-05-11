@@ -101,7 +101,7 @@ export const SearchWrapper = styled.div`
 
 	${media.mobile_sm} {
 		width: 95%;
-		margin-left: 4vw;
+		margin-left: 2.5vw;
 	}
 `;
 
