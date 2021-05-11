@@ -16,7 +16,7 @@ import {
 	Notifications,
 	Textsms,
 	Face,
-	KeyboardArrowDown,
+	// KeyboardArrowDown,
 	Search,
 } from '@material-ui/icons';
 import { LinkMain } from '../../style/GlobalStyle';
@@ -78,9 +78,9 @@ function Navbar() {
 					<IconBTN>
 						<Face />
 					</IconBTN>
-					<IconBTN>
+					{/* <IconBTN>
 						<KeyboardArrowDown />
-					</IconBTN>
+					</IconBTN> */}
 				</NavWrapper>
 			</Wrapper>
 		</Nav>
