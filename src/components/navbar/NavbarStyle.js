@@ -22,7 +22,8 @@ export const Nav = styled.nav`
 
 export const Wrapper = styled.div`
 	width: 90%;
-	margin: auto;
+	margin-right: auto;
+	margin-left: auto;
 
 	${media.tab} {
 		width: 95%;
@@ -33,6 +34,10 @@ export const Wrapper = styled.div`
 	}
 
 	${media.mobile_sm} {
+		width: 95%;
+	}
+
+	${media.mobile_2sm} {
 		width: 100%;
 	}
 `;
@@ -96,7 +101,7 @@ export const SearchWrapper = styled.div`
 
 	${media.mobile_sm} {
 		width: 95%;
-		margin-left: 10px;
+		margin-left: 4vw;
 	}
 `;
 

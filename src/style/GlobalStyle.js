@@ -96,7 +96,7 @@ export const BTN1 = styled.button`
 	align-items: center;
 
 	${media.mobile_sm} {
-		padding: 1rem 0.5rem;
+		padding: 0.8rem 0.5rem;
 	}
 
 	a {
