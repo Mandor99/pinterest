@@ -97,11 +97,19 @@ export const SearchWrapper = styled.div`
 		top: 65px;
 		width: 95%;
 		margin: auto;
+		/* margin-left: 2vw; */
+		/* margin-right: 2vw; */
 	}
 
 	${media.mobile_sm} {
 		width: 95%;
-		margin-left: 2.5vw;
+		/* margin-left: 2vw; */
+		/* margin-right: 2vw; */
+	}
+
+	${media.mobile_2sm} {
+		margin-left: 2vw;
+		margin-right: 2vw;
 	}
 `;
 
