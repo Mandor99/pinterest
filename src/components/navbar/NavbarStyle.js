@@ -47,6 +47,7 @@ export const NavWrapper = styled.div`
 	align-items: center;
 	gap: ${Margins.gap_150};
 	height: ${Sizes.height_med};
+	justify-content: space-between;
 
 	${media.tab} {
 		gap: ${Margins.gap_50};
@@ -96,7 +97,6 @@ export const SearchWrapper = styled.div`
 		position: absolute;
 		top: 65px;
 		width: 95%;
-		justify-content: space-between;
 		margin: auto;
 		/* margin-left: 2vw; */
 		/* margin-right: 2vw; */
