@@ -25,7 +25,7 @@ import { usePins } from '../../app/hooks/PinsContext';
 
 function Navbar() {
 	const [input, setInput] = useState('');
-	const [setPins] = usePins();
+	const [pins, setPins] = usePins();
 	const handleChange = (setter) => (e) => setter(e.target.value);
 	const getSearchResults = (item) => {
 		unsplash
@@ -37,8 +37,9 @@ function Navbar() {
 			})
 			.then((res) => {
 				const results = res.data.results;
-				setPins([...results]);
-			});
+				input.length > 1 ? setPins([...results]) : setPins([...pins]);
+			})
+			.catch((err) => alert(err.message));
 	};
 	const handleSubmit = (e) => {
 		e.preventDefault();
@@ -52,10 +53,14 @@ function Navbar() {
 						<Pinterest />
 					</Figure>
 					<HomeBTN>
-						<LinkMain href='/'>HomePage</LinkMain>
+						<LinkMain href='/' onClick={(e) => e.preventDefault()}>
+							HomePage
+						</LinkMain>
 					</HomeBTN>
 					<FollowBTN>
-						<LinkMain href='/'>Following</LinkMain>
+						<LinkMain href='/' onClick={(e) => e.preventDefault()}>
+							Following
+						</LinkMain>
 					</FollowBTN>
 					<SearchWrapper>
 						<Search />

@@ -9,7 +9,7 @@ function Pins() {
     const [pins, setPins] = usePins()
 
     const getHomePins = () => {
-        const homePins = ['egypt', 'cat', 'oceans', 'tokyo', 'dark', 'dogs']
+        const homePins = ['egypt', 'cat', 'oceans', 'dark', 'dogs']
         const promisesArr = [] //array of async func to put it in promise.all([promiseArr1, promiseArr2, ...]).then(...)
         let pinsData = []
         homePins.forEach((pin) => {

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Margins } from '../../style/GlobalStyle';
+import { Margins, media } from '../../style/GlobalStyle';
 
 export const Main = styled.main`
 	min-height: 80vh;
@@ -10,4 +10,12 @@ export const Container = styled.div`
 	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
+
+	${media.mobile_sm} {
+		width: 80%;
+	}
+
+	${media.mobile_2sm} {
+		width: 90%;
+	}
 `;
